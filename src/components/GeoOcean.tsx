@@ -49,9 +49,9 @@ function Model({ url }: ModelProps) {
   useFrame((state, delta) => {
     // ref.current.position.y = 10 + Math.sin(state.clock.elapsedTime) * 20
     ref.current.position.y = 10
-    // ref.current.rotation.y += delta
-    ref.current.rotation.x = -0.2
-    ref.current.rotation.y = 6.2
+    ref.current.rotation.y += delta
+    ref.current.rotation.x = 0
+    // ref.current.rotation.y = 6.2
     ref.current.rotation.z = 0
 
     if (mixerRef.current) {
