@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google'
 import * as THREE from 'three'
 import { useEffect } from 'react'
 import GeoOcean from '../components/GeoOcean'
-import Model from '../components/Model'
 
 const inter = Inter({ subsets: ['latin'] })
 
