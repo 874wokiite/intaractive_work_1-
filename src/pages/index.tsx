@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google'
 import * as THREE from 'three'
 import { useEffect } from 'react'
 import GeoOcean from '../components/GeoOcean'
+import Link from 'next/link';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -15,8 +16,9 @@ export default function Home() {
     >
       <div style={{ position: 'relative' }}>
         <GeoOcean />
-        <h1 style={{ position: 'absolute', top: 16, left: 32 }}>Hi!!!!!!</h1>
-        <Model url="/shishiga_gaz-66/scene.gltf" />
+        <h1 style={{ position: 'absolute', top: 16, left: 32 }}>
+          <Link href="/chaseface">Hi!!!!!</Link>
+        </h1>
 
       </div>
     </main>
